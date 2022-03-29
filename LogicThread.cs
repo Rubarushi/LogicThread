@@ -69,7 +69,7 @@ namespace ThreadModule
                             Log.Exception(e);
                             if(Nodes[i].ExceptFile != null)
                             {
-                                using( StreamWriter w = new StreamWriter(Nodes[i].ExceptFil, true ) )
+                                using( StreamWriter w = new StreamWriter(Nodes[i].ExceptFile, true ) )
                                 {
                                      w.WriteLine( e.ToString() );
                                      w.WriteLine();
